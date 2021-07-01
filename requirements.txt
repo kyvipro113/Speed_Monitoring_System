@@ -1,0 +1,9 @@
+# pip install -r requirements.txt
+
+# base ---------------------------
+yolov5
+pyqt5
+pyodbc
+opencv-python
+opencv-contrib-python
+numpy
