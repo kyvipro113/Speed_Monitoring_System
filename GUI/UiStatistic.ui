@@ -16,9 +16,9 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>310</x>
      <y>0</y>
-     <width>301</width>
+     <width>531</width>
      <height>31</height>
     </rect>
    </property>
@@ -31,7 +31,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Violating vehicle statistics</string>
+    <string>Thống Kê Phương Tiện Giao Thông Vi Phạm</string>
    </property>
   </widget>
   <widget class="QTableWidget" name="dataTab">
@@ -54,7 +54,7 @@
    </attribute>
    <column>
     <property name="text">
-     <string>Vehicle ID</string>
+     <string>Mã Phương Tiện</string>
     </property>
     <property name="font">
      <font>
@@ -68,7 +68,7 @@
    </column>
    <column>
     <property name="text">
-     <string>Speed</string>
+     <string>Tốc Độ</string>
     </property>
     <property name="font">
      <font>
@@ -82,7 +82,7 @@
    </column>
    <column>
     <property name="text">
-     <string>Violation Error</string>
+     <string>Lỗi Vi Phạm</string>
     </property>
     <property name="font">
      <font>
@@ -96,7 +96,7 @@
    </column>
    <column>
     <property name="text">
-     <string>Time</string>
+     <string>Thời Gian</string>
     </property>
     <property name="font">
      <font>
@@ -130,8 +130,8 @@
     <rect>
      <x>640</x>
      <y>421</y>
-     <width>91</width>
-     <height>101</height>
+     <width>108</width>
+     <height>108</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -146,7 +146,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Vehicle ID:</string>
+       <string>Mã P.Tiện:</string>
       </property>
      </widget>
     </item>
@@ -161,7 +161,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Violation:</string>
+       <string>Lỗi Vi Phạm:</string>
       </property>
      </widget>
     </item>
@@ -176,7 +176,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Time:</string>
+       <string>Thời Gian:</string>
       </property>
      </widget>
     </item>
@@ -191,7 +191,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Image:</string>
+       <string>Ảnh P.Tiện:</string>
       </property>
      </widget>
     </item>
@@ -274,7 +274,7 @@
     <rect>
      <x>1070</x>
      <y>430</y>
-     <width>101</width>
+     <width>102</width>
      <height>80</height>
     </rect>
    </property>
@@ -288,7 +288,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Delete</string>
+       <string>Xóa</string>
       </property>
      </widget>
     </item>
@@ -301,7 +301,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Delete All</string>
+       <string>Xóa Tất Cả</string>
       </property>
      </widget>
     </item>

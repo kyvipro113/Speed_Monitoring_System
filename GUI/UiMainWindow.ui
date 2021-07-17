@@ -10,8 +10,20 @@
     <height>736</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>1191</width>
+    <height>736</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1191</width>
+    <height>736</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Hệ Thống Giám Sát Phương Tiện Giao Thông</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frameHeader">
@@ -35,16 +47,16 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>20</y>
-       <width>1001</width>
-       <height>61</height>
+       <x>330</x>
+       <y>30</y>
+       <width>781</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <family>Times New Roman</family>
-       <pointsize>36</pointsize>
+       <pointsize>30</pointsize>
        <weight>75</weight>
        <bold>true</bold>
       </font>
@@ -53,7 +65,26 @@
       <string notr="true">color: white</string>
      </property>
      <property name="text">
-      <string>Vehicle Speed Monitoring System On Highways</string>
+      <string>Hệ Thống Giám Sát Phương Tiện Giao Thông</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>268</width>
+       <height>107</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgb(12, 31, 56);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>ImageGUI/logo.png</pixmap>
      </property>
     </widget>
    </widget>
@@ -114,16 +145,16 @@
      <string notr="true">background-color:rgb(0, 33, 71)</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tabRecognition">
      <attribute name="title">
-      <string>Monitoring</string>
+      <string>Giám Sát</string>
      </attribute>
     </widget>
     <widget class="QWidget" name="tabGetImage">
      <attribute name="title">
-      <string>Statistic</string>
+      <string>Thống Kê</string>
      </attribute>
     </widget>
    </widget>

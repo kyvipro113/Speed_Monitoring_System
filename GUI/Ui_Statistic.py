@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'UiStatistic.ui'
 #
@@ -16,7 +16,7 @@ class Ui_Statistic(object):
         Statistic.setObjectName("Statistic")
         Statistic.resize(1191, 531)
         self.label_7 = QtWidgets.QLabel(Statistic)
-        self.label_7.setGeometry(QtCore.QRect(420, 0, 301, 31))
+        self.label_7.setGeometry(QtCore.QRect(310, 0, 531, 31))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(20)
@@ -66,7 +66,7 @@ class Ui_Statistic(object):
         self.lbImgVeh.setText("")
         self.lbImgVeh.setObjectName("lbImgVeh")
         self.verticalLayoutWidget = QtWidgets.QWidget(Statistic)
-        self.verticalLayoutWidget.setGeometry(QtCore.QRect(640, 421, 91, 101))
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(640, 421, 108, 108))
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
@@ -150,7 +150,7 @@ class Ui_Statistic(object):
         self.lbImg.setObjectName("lbImg")
         self.verticalLayout_2.addWidget(self.lbImg)
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(Statistic)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(1070, 430, 101, 80))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(1070, 430, 102, 80))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -176,32 +176,24 @@ class Ui_Statistic(object):
     def retranslateUi(self, Statistic):
         _translate = QtCore.QCoreApplication.translate
         Statistic.setWindowTitle(_translate("Statistic", "Frame"))
-        self.label_7.setText(_translate("Statistic", "Violating vehicle statistics"))
+        self.label_7.setText(_translate("Statistic", "Thống Kê Phương Tiện Giao Thông Vi Phạm"))
         item = self.dataTab.horizontalHeaderItem(0)
-        item.setText(_translate("Statistic", "Vehicle ID"))
+        item.setText(_translate("Statistic", "Mã Phương Tiện"))
         item = self.dataTab.horizontalHeaderItem(1)
-        item.setText(_translate("Statistic", "Speed"))
+        item.setText(_translate("Statistic", "Tốc Độ"))
         item = self.dataTab.horizontalHeaderItem(2)
-        item.setText(_translate("Statistic", "Violation Error"))
+        item.setText(_translate("Statistic", "Lỗi Vi Phạm"))
         item = self.dataTab.horizontalHeaderItem(3)
-        item.setText(_translate("Statistic", "Time"))
-        self.label_2.setText(_translate("Statistic", "Vehicle ID:"))
-        self.label_4.setText(_translate("Statistic", "Violation:"))
-        self.label_3.setText(_translate("Statistic", "Time:"))
-        self.label_8.setText(_translate("Statistic", "Image:"))
+        item.setText(_translate("Statistic", "Thời Gian"))
+        self.label_2.setText(_translate("Statistic", "Mã P.Tiện:"))
+        self.label_4.setText(_translate("Statistic", "Lỗi Vi Phạm:"))
+        self.label_3.setText(_translate("Statistic", "Thời Gian:"))
+        self.label_8.setText(_translate("Statistic", "Ảnh P.Tiện:"))
         self.lbID.setText(_translate("Statistic", "ID"))
         self.lbViolation.setText(_translate("Statistic", "vio"))
         self.lbTime.setText(_translate("Statistic", "yyyy-mm-dd hh:mm:ss"))
         self.lbImg.setText(_translate("Statistic", "img"))
-        self.btDel.setText(_translate("Statistic", "Delete"))
-        self.btDelAll.setText(_translate("Statistic", "Delete All"))
+        self.btDel.setText(_translate("Statistic", "Xóa"))
+        self.btDelAll.setText(_translate("Statistic", "Xóa Tất Cả"))
 
 
-if __name__ == "__main__":
-    import sys
-    app = QtWidgets.QApplication(sys.argv)
-    Statistic = QtWidgets.QFrame()
-    ui = Ui_Statistic()
-    ui.setupUi(Statistic)
-    Statistic.show()
-    sys.exit(app.exec_())

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 
 # Form implementation generated from reading ui file 'UiMonitoring.ui'
 #
@@ -21,7 +21,7 @@ class Ui_Monitoring(object):
         self.lbImg.setText("")
         self.lbImg.setObjectName("lbImg")
         self.label_7 = QtWidgets.QLabel(Monitoring)
-        self.label_7.setGeometry(QtCore.QRect(420, 0, 301, 31))
+        self.label_7.setGeometry(QtCore.QRect(370, 0, 421, 31))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
         font.setPointSize(20)
@@ -147,12 +147,12 @@ class Ui_Monitoring(object):
     def retranslateUi(self, Monitoring):
         _translate = QtCore.QCoreApplication.translate
         Monitoring.setWindowTitle(_translate("Monitoring", "Frame"))
-        self.label_7.setText(_translate("Monitoring", "Vehicle Speed Monitoring"))
-        self.btChooseVideo.setText(_translate("Monitoring", "Choose Video"))
-        self.label_2.setText(_translate("Monitoring", "Input Video:"))
+        self.label_7.setText(_translate("Monitoring", "Giám Sát Phương Tiện Giao Thông"))
+        self.btChooseVideo.setText(_translate("Monitoring", "Chọn Video"))
+        self.label_2.setText(_translate("Monitoring", "Video Đầu Vào:"))
         self.lbNameVideo.setText(_translate("Monitoring", "Video.mp4"))
-        self.label_5.setText(_translate("Monitoring", "Input Type:"))
-        self.btStart.setText(_translate("Monitoring", "Start"))
-        self.btEnd.setText(_translate("Monitoring", "End"))
-        self.label_6.setText(_translate("Monitoring", "Pixel Per Meter:"))
+        self.label_5.setText(_translate("Monitoring", "Loại Đầu Vào:"))
+        self.btStart.setText(_translate("Monitoring", "Bắt Đầu"))
+        self.btEnd.setText(_translate("Monitoring", "Kết Thúc"))
+        self.label_6.setText(_translate("Monitoring", "Pixel Trên Mét:"))
 

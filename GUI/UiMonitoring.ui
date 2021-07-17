@@ -32,9 +32,9 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>420</x>
+     <x>370</x>
      <y>0</y>
-     <width>301</width>
+     <width>421</width>
      <height>31</height>
     </rect>
    </property>
@@ -47,7 +47,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Vehicle Speed Monitoring</string>
+    <string>Giám Sát Phương Tiện Giao Thông</string>
    </property>
   </widget>
   <widget class="QWidget" name="horizontalLayoutWidget_2">
@@ -69,7 +69,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Choose Video</string>
+       <string>Chọn Video</string>
       </property>
      </widget>
     </item>
@@ -94,7 +94,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Input Video:</string>
+       <string>Video Đầu Vào:</string>
       </property>
      </widget>
     </item>
@@ -166,7 +166,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Input Type:</string>
+       <string>Loại Đầu Vào:</string>
       </property>
      </widget>
     </item>
@@ -191,7 +191,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Start</string>
+       <string>Bắt Đầu</string>
       </property>
      </widget>
     </item>
@@ -204,7 +204,7 @@
        </font>
       </property>
       <property name="text">
-       <string>End</string>
+       <string>Kết Thúc</string>
       </property>
      </widget>
     </item>
@@ -251,7 +251,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Pixel Per Meter:</string>
+       <string>Pixel Trên Mét:</string>
       </property>
      </widget>
     </item>
