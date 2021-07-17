@@ -73,7 +73,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabMonitoring.setCurrentIndex(1)
+        self.tabMonitoring.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -82,4 +82,3 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Hệ Thống Giám Sát Phương Tiện Giao Thông"))
         self.tabMonitoring.setTabText(self.tabMonitoring.indexOf(self.tabRecognition), _translate("MainWindow", "Giám Sát"))
         self.tabMonitoring.setTabText(self.tabMonitoring.indexOf(self.tabGetImage), _translate("MainWindow", "Thống Kê"))
-
