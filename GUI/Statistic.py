@@ -54,7 +54,7 @@ class Statistic(QFrame, Ui_Statistic):
         item = self.dataTab.item(row, 2)
         self.lbTime.setText(item.text())
         self.lbImg.setText(str(dataImg[0]))
-        self.file_path = "../Speed_Monitoring_System/violating_vehicle/" + str(dataImg[0])
+        self.file_path = "violating_vehicle/" + str(dataImg[0])
         img_car = cv2.imread(self.file_path)
         img_car = cv2.resize(img_car, (551, 351))
         rgb_img = cv2.cvtColor(img_car, cv2.COLOR_BGR2RGB)
@@ -75,16 +75,16 @@ class Statistic(QFrame, Ui_Statistic):
             self.lbViolation.setText("")
             self.lbTime.setText("")
             self.lbImg.setText("")
-            self.lbImgVeh.setPixmap(QPixmap("../Speed_Monitoring_System/GUI/ImageGUI/imgNone.png"))
-            self.alert(title="Notification", message="Action performed successfully")
+            self.lbImgVeh.setPixmap(QPixmap("GUI/ImageGUI/imgNone.png"))
+            self.alert(title="Thông báo", message="Thao tác thực hiện thành công")
         except:
-            self.alert(title="Warning", message="Action performed failed")
+            self.alert(title="Cảnh báo", message="Thao tác thực hiện thất bại")
         finally:
             self.loadData()
 
 
     def deleteAllOnDataTable(self):
-        dir_path = "../Speed_Monitoring_System/violating_vehicle"
+        dir_path = "violating_vehicle"
         try:
             SQL = SQLConnection()
             SQL.queryNoReturn("Delete From ViolatingVehicle")
@@ -97,10 +97,10 @@ class Statistic(QFrame, Ui_Statistic):
             self.lbViolation.setText("")
             self.lbTime.setText("")
             self.lbImg.setText("")
-            self.lbImgVeh.setPixmap(QPixmap("../Speed_Monitoring_System/GUI/ImageGUI/imgNone.png"))
-            self.alert(title="Notification", message="Action performed successfully")
+            self.lbImgVeh.setPixmap(QPixmap("GUI/ImageGUI/imgNone.png"))
+            self.alert(title="Thông báo", message="Thao tác thực hiện thành công!")
         except:
-            self.alert(title="Warning", message="Action performed failed")
+            self.alert(title="Cảnh báo", message="Thao tác thực hiện thất bại!")
         finally:
             self.loadData()
         

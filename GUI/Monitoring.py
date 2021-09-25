@@ -28,7 +28,7 @@ import math
 from SQL_Connection.SQLConnection import SQLConnection
 import datetime
 
-path_save_violating_vehicle = "../Speed_Monitoring_System/violating_vehicle/"
+path_save_violating_vehicle = "violating_vehicle/"
 
 violation_time = {}
 
@@ -270,7 +270,7 @@ class ThreadMonitoring(QThread): # Using thread for real-time detect and trackin
 
                             for id in violating_vehicle.keys():
                                 img_crop = im0[violating_vehicle[id][1]:violating_vehicle[id][3], violating_vehicle[id][0]:violating_vehicle[id][2]]
-                                if(img_crop.shape[0] > 0  and img_crop.shape[1]):
+                                if(img_crop.shape[0] > 0  and img_crop.shape[1]>0):
                                     if not os.path.isfile(path_save_violating_vehicle + "{}.{}.jpg".format(fileName, id)):
                                         cv2.imwrite(path_save_violating_vehicle + "{}.{}.jpg".format(fileName, id), img_crop)
                                         imgFile = fileName + "." + str(id) + "." + "jpg"
@@ -366,7 +366,7 @@ class Monitoring(QFrame, Ui_Monitoring):
                 pixels_per_meter = float(self.txtPPM.text())
                 #print(pixels_per_meter)
             else:
-                self.alert(title="Warning", message="Pixel per meter must be greater than 0, \n system will be set default value")
+                self.alert(title="Cảnh báo", message="Pixel trên met phải lớn hơn 0, \n Hệ thống sẽ cài đặt mặc định")
         else:
             pixels_per_meter = 1
         if(self.comboInput.currentText() == "Camera"):
@@ -377,7 +377,7 @@ class Monitoring(QFrame, Ui_Monitoring):
                 self.threadMonitoring.setPath(path="0")
                 self.threadMonitoring.start()
         if(self.path is None and self.comboInput.currentText() == "Video"):
-            self.alert(title="Warning", message="No video selected!!")
+            self.alert(title="Cảnh báo", message="Không có vide được chọn!")
         else:
             if not flag:
                 self.btStart.setEnabled(False)
