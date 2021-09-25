@@ -29,6 +29,8 @@ from SQL_Connection.SQLConnection import SQLConnection
 import datetime
 
 path_save_violating_vehicle = "violating_vehicle/"
+if not (os.path.isdir("violating_vehicle")):
+    os.mkdir("violating_vehicle")
 
 violation_time = {}
 
